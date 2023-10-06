@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --fonte--principal: 'League Spartan', sans-serif;
+    --fonte--destaque: 'Urbanist', sans-serif;
+
+    --cor--background-1: #101015;
+    --cor--background-2: #101427;
+    --cor--fonte-principal: #FFFFFF;
+    --cor--fonte-destaque: #F61F11;
+    --cor--secundaria: #FFE0B2;
+}
+
+main {
+    min-height: 85%;
+}
+
+.home__section__1 {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 15%;
+    margin-top: 15%;
+}
+
+.home__titulo-container {
+    margin-bottom: 2rem;
+}
+
+.default__texto:last-child {
+    margin-top: 1rem;
+}

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --fonte--principal: 'League Spartan', sans-serif;
+    --fonte--destaque: 'Urbanist', sans-serif;
+
+    --cor--background-1: #101015;
+    --cor--background-2: #101427;
+    --cor--fonte-principal: #FFFFFF;
+    --cor--fonte-destaque: #F61F11;
+    --cor--secundaria: #ffe0b2;
+}
+
+.enterprise__apresentacao {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-inline: 5%;
+}
+
+.enterprise__apresentacao h1{
+    font-family: var(--fonte--destaque);
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--cor--fonte-destaque);
+}
+
+.enterprise__apresentacao p {
+    font-family: var(--fonte--principal);
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--cor--fonte-principal);
+}
+
+.enterprise__container:hover {
+    background: rgb(255, 224, 178, 0.5);
+    transform: scale(1.05);
+    transition: all 0.5;
+    cursor: pointer;
+}
+
+.enterprise__container {
+    display: flex;
+    gap: 1rem;
+    margin: 5%;
+    padding: 5%;
+    background: rgb(255, 224, 178, 0.2); 
+    border-radius: 10px;
+}
+
+.enterprise__container img{
+    height: auto;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 2px solid var(--cor--fonte-principal);
+}
+
+.enterprise__container div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.enterprise__container h1 {
+    font-family: var(--fonte--destaque);
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--cor--fonte-destaque);
+}
+
+.enterprise__container p {
+    font-family: var(--fonte--principal);
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--cor--fonte-principal);
+}

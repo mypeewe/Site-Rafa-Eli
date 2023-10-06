@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --fonte--principal: 'League Spartan', sans-serif;
+    --fonte--destaque: 'Urbanist', sans-serif;
+
+    --cor--background-1: #101015;
+    --cor--background-2: #101427;
+    --cor--fonte-principal: #FFFFFF;
+    --cor--fonte-destaque: #F61F11;
+    --cor--secundaria: #FFE0B2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    height: 100vh;
+    background: linear-gradient(var(--cor--background-2), var(--cor--background-1));
+}
+
+header {
+    margin: 10%
+}
+
+.default__titulo {
+    font-family: var(--fonte--destaque);
+    font-size: 2.4rem;
+    color: var(--cor--fonte-destaque);
+    font-weight: 800;
+}
+
+.default__subtitulo {
+    font-family: var(--fonte--principal);
+    font-size: 1.2rem;
+    color: var(--cor--fonte-principal);
+    font-weight: 400;
+}
+
+.default__texto {
+    font-family: var(--fonte--principal);
+    font-size: 1.2rem;
+    font-weight: 200;
+    line-height: 1.3rem;
+    color: var(--cor--fonte-principal);
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: var(--cor--secundaria); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    display: block;
+    font-family: var(--fonte--destaque);
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--cor--fonte-destaque);
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+    background-color: var(--cor--fonte-destaque);
+    font-weight: 600;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  footer {
+    font-size: 1rem;
+    font-weight: 200;
+    font-style: italic;
+    font-family: var(--fonte--principal);
+    color: var(--cor--fonte-principal);
+    text-align: center;
+    margin-top: 1rem;
+    padding: 3%
+  }
